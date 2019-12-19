@@ -1,0 +1,34 @@
+{
+  "name": "11",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u001b[2~\u001b[2~https://github.com/DAnMaN15726/FriendFinder"
+  },
+  "keywords": [
+    "Friend",
+    "friend",
+    "Finder",
+    "finder",
+    "Node",
+    "node",
+    "Dan",
+    "dan",
+    "Javascript",
+    "javascript",
+    "HTML",
+    "html",
+    "CSS",
+    "css"
+  ],
+  "author": "Dan",
+  "license": "ISC",
+  "dependencies": {
+    "path": "^0.12.7"
+  }
+}
