@@ -17,22 +17,22 @@ app.use(express.json());
 
 
 
-router.get("/", function(req, res){
-    console.log(`HOMEPAGE SENT`);
-    console.log("\n");
-    res.sendFile(path.join(__dirname, "../app/public/home.html"));
-    res.send("HOME");
-
-});
-
 router.get("/survey", function(req, res){
     console.log(`SURVEY PAGE SENT`);
     console.log("\n");
-    res.sendFile(path.join(__dirname, "../app/public/survey.html"));
-    res.send("SURVEY");
+    res.sendFile(path.join(__dirname, "../public/survey.html"));
+    // res.send("SURVEY");
 
 });
 
+
+router.get("*", function(req, res){
+    console.log(`HOMEPAGE SENT`);
+    console.log("\n");
+    res.sendFile(path.join(__dirname, "../public/home.html"));
+    // res.send("HOME");
+
+});
 
 
 
