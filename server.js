@@ -1,23 +1,20 @@
 const express = require("express");
 const path = require("path");
+// const route = require("./app/routing/htmlRoutes");
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.urlencoded({ extended:true}));
 app.use(express.json());
 
 
 
-app.get("/", function(req, res){
-    res.sendFile(path.join(__dirname, "./app/public/home.html"));
+app.use(require("./app/routing/htmlRoutes"));
 
-});
 
-app.get("/survey", function(req, res){
-    res.sendFile(path.join(__dirname, "./app/public/survey.html"));
 
-});
+
 
 
 
