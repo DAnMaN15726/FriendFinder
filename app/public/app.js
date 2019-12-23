@@ -1,4 +1,7 @@
 let counter = 0;
+let name;
+let photo;
+
 const questions = [
     {
         question: "You like to go out.",
@@ -59,6 +62,44 @@ function answerMe(){
 }
 
 
+function apply(){
+
+    $("#submit0").on("click", function(){
+        name = $("#name").val();
+        photo = $("#link").val();
+
+
+
+        window.location.replace("./survey.html");
+
+        $("#submit0").off("click");
+        
+    });
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 $(".but").on("click", function(){
     event.preventDefault();
     $(".but").removeClass("active");
@@ -75,17 +116,17 @@ $(".but").on("click", function(){
 
 
 
-
-
-
-
-
-
-
-
-
-
+apply();
 answerMe();
+
+
+
+
+
+
+
+
+
 
 
 
