@@ -11,7 +11,7 @@ app.use(express.json());
 
 app.use(require("./app/routing/apiRoutes.js"));
 app.use(require("./app/routing/htmlRoutes.js"));
-
+app.use(express.static(__dirname + './app/public'));
 
 
 

@@ -21,6 +21,7 @@ router.get("/survey", function(req, res){
     console.log(`SURVEY PAGE SENT`);
     console.log("\n");
     res.sendFile(path.join(__dirname, "../public/survey.html"));
+    res.sendFile(path.join(__dirname,"../public/style.css"));
     // res.send("SURVEY");
 
 });
