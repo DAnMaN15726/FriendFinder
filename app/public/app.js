@@ -1,3 +1,4 @@
+let counter = 0;
 const questions = [
     {
         question: "You like to go out.",
@@ -29,20 +30,64 @@ const questions = [
 
 
 function answerMe(){
-    let counter = 0;
-
-    for(i = 0; i < questions.length; i++){
-        $("jumbotron").text(questions[i].question);
-        
-
-
-
-
+    if ( counter >= 5){
+        $(".quest").empty();
+        $(".btn").remove();
+        return;
     }
+
+    $(".quest").text(questions[counter].question);
+
+
+
+    $("#submit").on("click", function(){
+        console.log(`SUBMIT ACTIVATED`);
+        counter++;
+
+
+        let answer = $(".active").val();
+
+
+        $("#submit").off("click");
+        answerMe();
+    });
+
 
 
 
 
 }
+
+
+$(".but").on("click", function(){
+    event.preventDefault();
+    $(".but").removeClass("active");
+    
+    $(this).toggleClass("active");
+    
+
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+answerMe();
+
+
+
 
 
