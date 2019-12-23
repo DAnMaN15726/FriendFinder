@@ -1,6 +1,6 @@
 #home{
     background-image: url("../images/1.jpg");
-    background-size: 100%
+    background-size: 100%;
 }
 
 
@@ -36,6 +36,7 @@
 
 #survey{
     background-image: url("../images/2.jpg");
+    background-size: 100%;
 
 
 }
